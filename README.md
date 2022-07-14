@@ -1,6 +1,6 @@
 # Vending Machine
 
-Project Summary:
+## Project Summary:
 
     - This is a program that simulates a Vending Machine
     - The program displays all items and their respective prices when the program starts
@@ -11,7 +11,7 @@ Project Summary:
     - Audit file that logs all transactions with timestamp
 
 
-Technologies used: 
+## Technologies used: 
 
     - Java
     - MVC pattern
