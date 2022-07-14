@@ -1,0 +1,20 @@
+A1::Lays Potato Chips::1.00::10
+A2::Fritos::1.00::10
+A3::Cheetos Oven Baked Flamin' Hot::1.00::10
+A4::Cheetos Flammin' Hot::1.00::10
+B1::Doritos Nacho Cheese::1.00::10
+B2::Doritos Cool Ranch::1.00::10
+B3::Ruffles Original::1.00::10
+B4::Ruffles Cheddar and Sour Cream::1.00::10
+C1::Sun Chips Original::1.00::10
+C2::Sun Chips Harvest Cheddar::1.00::10
+C3::Sun Chips French Onion::1.00::10
+C4::Sun Chips Sweet Potato::1.00::10
+D1::Hershey's::0.80::10
+D2::Snickers::0.80::10
+D3::M&M's::0.80::10
+D4::Musketeers::0.80::10
+E1::Mike & Ikes::0.80::10
+E2::Skittles::0.80::10
+E3::Jujubes::0.80::10
+E4::Junior Mints::0.80::10

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+                http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="userIO" class="acalvillo105.vendingmachine.ui.UserIOConsoleImpl"/>
+   
+    <bean id="view" class="acalvillo105.vendingmachine.ui.ClassVendingMachineView">
+        <constructor-arg ref="userIO"/>
+    </bean>
+   
+    <bean id="dao" 
+         class="acalvillo105.vendingmachine.dao.ClassVendingMachineDaoFileImpl"/>
+   
+    <bean id="auditDao" 
+         class="acalvillo105.vendingmachine.dao.ClassVendingMachineAuditDaoFileImpl"/>
+    
+     <bean id="moneyDao" 
+         class="acalvillo105.vendingmachine.dao.ClassVendingMachineMoneyDaoImpl"/>
+   
+    <bean id="serviceLayer" 
+         class="acalvillo105.vendingmachine.service.ClassVendingMachineServiceLayerImpl">
+        <constructor-arg ref="moneyDao"/>
+        <constructor-arg ref="auditDao"/> 
+        <constructor-arg ref="dao"/>          
+    </bean>
+   
+    <bean id="controller" 
+         class="acalvillo105.vendingmachine.controller.ClassVendingMachineController">
+        <constructor-arg ref="serviceLayer"/>
+        <constructor-arg ref="view"/>
+    </bean> 
+   
+</beans>
